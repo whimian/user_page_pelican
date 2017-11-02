@@ -3,7 +3,7 @@
 # from __future__ import unicode_literals
 
 AUTHOR = u'yuhao'
-SITENAME = u'North Shore'
+SITENAME = u'Yu Hao'
 SITEURL = ''
 
 PATH = 'articles'
@@ -65,7 +65,9 @@ THEME = r'..\..\..\martin-pelican'
 #      'fa fa-github-square fa-fw fa-lg')
 # )
 
-STATIC_PATHS = ['images', 'html_file']
+STATIC_PATHS = ['images',
+                'html_file',
+                ]
 # make pelican not to process html_file folder
 PAGE_EXCLUDES = ['html_file']
 ARTICLE_EXCLUDES = ['html_file']
@@ -79,7 +81,9 @@ EXTRA_PATH_METADATA = {
     }
 # Plugins
 PLUGIN_PATHS = [r'..\..\pelican-plugins']
-PLUGINS = ['render_math', 'better_figures_and_images', 'cjk-auto-spacing']
+PLUGINS = ['render_math',
+           'better_figures_and_images',
+           'cjk-auto-spacing']
 # better_figures_and_images
 RESPONSIVE_IMAGES = True
 # cjk-auto-spacing
@@ -89,7 +93,9 @@ CJK_AUTO_SPACING_TITLE = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [('HOME', '/'),
-             ('Projects', '/pages/my-projects.html')]
+             ('Research', '/pages/research.html'),
+             ('Code', '/pages/code.html'),
+             ('Posts', '/blog_index.html')]
 
 WEIBO = True
 WEIBO_KEY = "appproximate000001"
@@ -97,3 +103,5 @@ WEIBO_KEY = "appproximate000001"
 # READERS = {"html": None}
 # NOT_RENDERING = ['404.html']
 # PAGE_PATHS = ['None']
+
+INDEX_SAVE_AS = 'blog_index.html'
