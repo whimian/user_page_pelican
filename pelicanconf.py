@@ -66,8 +66,8 @@ THEME = r'..\..\..\martin-pelican'
 # )
 
 STATIC_PATHS = ['images',
-                'html_file',
-                ]
+                'html_file'
+               ]
 # make pelican not to process html_file folder
 PAGE_EXCLUDES = ['html_file']
 ARTICLE_EXCLUDES = ['html_file']
@@ -92,10 +92,10 @@ CJK_AUTO_SPACING_TITLE = True
 
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
-MENUITEMS = [('HOME', '/'),
-             ('Research', '/pages/research.html'),
-             ('Code', '/pages/code.html'),
-             ('Posts', '/blog_index.html')]
+MENUITEMS = [('<i class="fa fa-user" aria-hidden="true"></i>HOME', '/'),
+             ('<i class="fa fa-graduation-cap" aria-hidden="true"></i>Research', '/pages/research.html'),
+             ('<i class="fa fa-code-fork" aria-hidden="true"></i>Code', '/pages/code.html'),
+             ('<i class="fa fa-pencil" aria-hidden="true"></i>Posts', '/blog_index.html')]
 
 WEIBO = True
 WEIBO_KEY = "appproximate000001"
