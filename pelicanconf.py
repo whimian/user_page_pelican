@@ -80,7 +80,8 @@ EXTRA_PATH_METADATA = {
     'html_file/404.html': {'path': '404.html'},
     }
 # Plugins
-PLUGIN_PATHS = [r'..\..\pelican-plugins']
+# PLUGIN_PATHS = [r'..\..\pelican-plugins']
+PLUGIN_PATHS = ['plugins']
 PLUGINS = ['render_math',
            'better_figures_and_images',
            'cjk-auto-spacing']
