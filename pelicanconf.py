@@ -38,7 +38,7 @@ DEFAULT_PAGINATION = 5
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
-THEME = r'..\..\..\martin-pelican'
+THEME = 'martin-pelican'
 # THEME = r'..\..\..\voidy-bootstrap'
 # THEME = 'simple'
 # SITESUBTILE = u'地球物理'
