@@ -66,7 +66,7 @@ THEME = '..\..\..\martin-pelican'
 # )
 
 STATIC_PATHS = ['images',
-                'html_file'
+                # 'html_file'
                ]
 # make pelican not to process html_file folder
 PAGE_EXCLUDES = ['html_file']
@@ -76,9 +76,9 @@ ARTICLE_EXCLUDES = ['html_file']
 # STATIC_SAVE_AS = '{path}'
 # STATIC_URL = '{path}'
 # put 404.html in the root folder
-EXTRA_PATH_METADATA = {
-    'html_file/404.html': {'path': '404.html'},
-    }
+# EXTRA_PATH_METADATA = {
+#     'html_file/404.html': {'path': '404.html'},
+#     }
 # Plugins
 # PLUGIN_PATHS = [r'..\..\pelican-plugins']
 PLUGIN_PATHS = ['plugins']
