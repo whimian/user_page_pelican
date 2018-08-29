@@ -2,7 +2,7 @@ Title: Yu Hao
 URL:
 save_as: index.html
 
-I am currently a PhD student in Institute of Geophysics and Geomatics at China University of GeoSciences (Wuhan).
+I am currently a PhD student at Institute of Geophysics and Geomatics at China University of GeoSciences (Wuhan).
 
 My research has been focusing on how to bring together different sources of measured geomechanical and elastic properties to predict and characterize hydrocarbon reservoirs which involves **Exploration Seismology**, **Well Log Analysis**, **Reservoir Geomechanics**, and **Geopressure Analysis**.
 
