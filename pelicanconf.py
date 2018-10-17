@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*- #
 # from __future__ import unicode_literals
 
-AUTHOR = u'yuhao'
+AUTHOR = u'Yu Hao'
 SITENAME = u'Yu Hao'
 SITEURL = ''
 
@@ -20,16 +20,15 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+# LINKS = (('Pelican', 'http://getpelican.com/'),
+#          ('Python.org', 'http://python.org/'),
+#          ('Jinja2', 'http://jinja.pocoo.org/'),
 
 # Social widget
 SOCIAL = (('weibo', 'http://weibo.com/whimsicalyuhao'),
           ('github', 'http://github.com/whimian'),
-          ('linkedin', 'https://www.linkedin.com/in/hao-yu-79ab2658'),
-          ('Another social link', '#'),)
+          ('linkedin', 'https://www.linkedin.com/in/hao-yu-79ab2658'),)
+        #   ('Another social link', '#'),)
 
 SHARE = (('twitter', 'http://twitter.com/share', '?text=', '&amp;url='),
          ('facebook', 'http://facebook.com/sharer.php', '?t=', '&amp;u='),
@@ -39,14 +38,19 @@ DEFAULT_PAGINATION = 5
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
 # THEME = '..\..\..\martin-pelican'
-THEME = 'themes\martin-pelican'
+# THEME = 'themes\martin-pelican'
+THEME = 'themes\pelican-bootstrap3'
 # THEME = r'..\..\..\voidy-bootstrap'
 # THEME = 'simple'
 # SITESUBTILE = u'地球物理'
 # SITETAG = u"于浩"
+DISQUS_SITENAME = 'whimian'
 
-
-
+MARKDOWN = {
+    'extension_configs': {
+        'markdown.extensions.tables':{},
+    }
+}
 # Extra stylesheets, for bootstrap overrides or additional styling.
 # STYLESHEET_FILES = ("pygment.css", "voidybootstrap.css",)
 
@@ -67,11 +71,18 @@ THEME = 'themes\martin-pelican'
 # )
 
 STATIC_PATHS = ['images',
-                # 'html_file'
+                'theme'
                ]
 # make pelican not to process html_file folder
 PAGE_EXCLUDES = ['html_file']
 ARTICLE_EXCLUDES = ['html_file']
+# READERS = {'html': None}
+TEMPLATE_PAGES = {
+    'html_file/index.html' : 'index.html',
+    'html_file/about.html' : 'pages/about.html',
+    'html_file/research.html' : 'pages/research.html',
+    'html_file/code.html' : 'pages/code.html',
+}
 
 # Take advantage of the following defaults
 # STATIC_SAVE_AS = '{path}'
@@ -82,16 +93,42 @@ ARTICLE_EXCLUDES = ['html_file']
 #     }
 # Plugins
 # PLUGIN_PATHS = [r'..\..\pelican-plugins']
+MARKUP = ('md',)# "ipynb")
 PLUGIN_PATHS = ['plugins']
+
+
+
 PLUGINS = ['render_math',
            'better_figures_and_images',
-           'cjk-auto-spacing']
+           'cjk-auto-spacing',
+           'liquid_tags.notebook',
+           'i18n_subsites', ]
+
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
+
+
+EXTRA_HEADER = open('_nb_header.html').read()
+IGNORE_FILES = [".ipynb_checkpoints"]
 # better_figures_and_images
 RESPONSIVE_IMAGES = True
 # cjk-auto-spacing
 CJK_AUTO_SPACING_TITLE = True
 
+PYGMENTS_STYLE = 'vs'
+BOOTSTRAP_THEME = 'readable'
+# BOOTSTRAP_FLUID = True
+DISPLAY_BREADCRUMBS = True
+ABOUT_ME = "Phd. Student \nat China University of Geosciences"
+# PADDED_SINGLE_COLUMN_STYLE = True
+DISPLAY_ARTICLE_INFO_ON_INDEX = True
+BANNER = 'images/banner.png'
+BANNER_ALL_PAGES = True
 
+DISQUS_NO_ID = True
+
+# DELETE_OUTPUT_DIRECTORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
 DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [('<i class="fa fa-user" aria-hidden="true"></i>HOME', '/'),

@@ -108,3 +108,7 @@ $RECYCLE.BIN/
 
 # pelican
 output/
+
+*/*.ipynb_checkpoints
+
+_nb_header.html

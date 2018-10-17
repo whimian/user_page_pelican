@@ -2,7 +2,7 @@ Title: Windows 10 安装 OpenSSH
 Date: 2017-11-23 09:00
 Category: Computer
 
-# 安装Win32-OpenSSH
+## 安装Win32-OpenSSH
 
 - 下载最新的发布版本 <https://github.com/PowerShell/Win32-OpenSSH/releases>
 - 解压到`C:\Program Files\OpenSSH`
@@ -46,7 +46,7 @@ Category: Computer
 
 	![registry]({filename}/images/registry_for_ssh.png)
 
-# 设置使用SSH秘钥登陆
+## 设置使用SSH秘钥登陆
 
 安装后，可以直接使用用户名和密码方式从client登陆到host上：
 
@@ -54,7 +54,7 @@ Category: Computer
 
 要使用密匙登陆需要采用以下步骤来设置：
 
-## 在client端：
+### 在client端：
 
 1. 生成key pair （即private client key 和 public client key）
 
@@ -89,7 +89,7 @@ id_rsa 为key文件名，生成时会提示输入passphrase来保护private key�
 
 	`ssh -i .\id_rsa user@host`
 
-## 在服务器端
+### 在服务器端
 
 1. 同样在服务器端的用户目录`$HOME`下建立`.ssh\`，并在其中建立`authorized_keys`文件：
 

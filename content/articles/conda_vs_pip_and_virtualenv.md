@@ -26,7 +26,7 @@ virtualenv $ENVIRONMENT_NAME
 还是`conda`的[官方文档](https://docs.anaconda.com/_downloads/conda-pip-virtualenv-translator.html)里有一个对比表格:
 
 | Task | Conda package and environment manager command | Pip package manager command | Virtualenv environment manager command |
-|--------------------------------------|-----------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------|
+|:--------------------------------------:|:-----------------------------------------------------:|:-----------------------------------------------------------------:|:-----------------------------------------------------:|
 | Install a package | conda install $PACKAGE_NAME | pip install $PACKAGE_NAME | X |
 | Update a package | conda update --name $ENVIRONMENT_NAME $PACKAGE_NAME | pip install --upgrade $PACKAGE_NAME | X |
 | Update package manager | conda update conda | Linux/OSX: pip install -U pip Win: python -m pip install -U pip | X |
