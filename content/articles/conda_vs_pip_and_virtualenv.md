@@ -1,6 +1,7 @@
 Title: conda与pip+virtualenv的环境管理对比
 Date: 2017-10-20 09:00
-Category: Computer
+Category: Python
+tags: python, conda, pip
 
 最近发现[PyScaffold](https://pyscaffold.readthedocs.io/en/v2.5.8/features.html)可以辅助创建项目结构，很想试一下。
 

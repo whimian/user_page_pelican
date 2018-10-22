@@ -1,6 +1,7 @@
 Title: 不同系统的endOfLine问题
 Date: 2016-08-01 16:20
-Category: Computer
+Category: CS
+tags: C++
 
 最近由于要参加老师要求参加的中海油举办的 $\pi-Frame$ 软件编程比赛，准备复习一下C++，结果在使用`cin.getline()`接受输入时发现得到的`string`长度有问题，导致比较的时候不能得到预期结果。。。
 

@@ -1,6 +1,7 @@
 Title: 在Powershell中使用Conda的activate
 Date: 2017-10-23 09:00
-Category: Computer
+Category: python
+tags: python, conda, powershell
 
 `conda`在Windows上的默认`shell`是`cmd`，而不是`PowerShell`。在`PowerShell`中使用一般的`conda`命令是可以，但无法使用`activate`、`deactivate`切换环境，这在日常使用中极其不便，为了切换环境，还要单独打开一个cmd。
 

@@ -102,7 +102,8 @@ PLUGINS = ['render_math',
            'better_figures_and_images',
            'cjk-auto-spacing',
            'liquid_tags.notebook',
-           'i18n_subsites', ]
+           'i18n_subsites',
+           "tag_cloud",]
 
 JINJA_ENVIRONMENT = {
     'extensions': ['jinja2.ext.i18n'],
@@ -123,8 +124,14 @@ DISPLAY_BREADCRUMBS = True
 ABOUT_ME = "Phd. Student \nat China University of Geosciences"
 # PADDED_SINGLE_COLUMN_STYLE = True
 DISPLAY_ARTICLE_INFO_ON_INDEX = True
+DISPLAY_CATEGORIES_ON_SIDEBAR = True
+DISPLAY_RECENT_POSTS_ON_SIDEBAR = True
+DISABLE_SIDEBAR_TITLE_ICONS = True
+DISPLAY_TAGS_ON_SIDEBAR = True
+DISPLAY_TAGS_INLINE = True
 BANNER = 'images/banner.png'
 BANNER_ALL_PAGES = True
+
 
 DISQUS_NO_ID = True
 

@@ -1,6 +1,7 @@
 Title: Windows 10 安装 OpenSSH
 Date: 2017-11-23 09:00
-Category: Computer
+Category: CS
+tags: ssh, windows
 
 ## 安装Win32-OpenSSH
 
