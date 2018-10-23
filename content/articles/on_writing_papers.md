@@ -5,7 +5,7 @@ tags: writing, research
 
 To write peer-reviewed journal articles and get them published is probabally the hardest and most important part of graduate school life. An "algorithm" for writing a paper was proposed by Professor Pete Carr in a youtube video titled "How to write a paper in a weekend" [<i class="fa fa-youtube" aria-hidden="true"></i>](https://www.youtube.com/watch?v=UY7sVKJPTMA).  (What an attractive and exciting title!)
 
-The outline of the algorithm[1] extracted from the video is presented as the following:
+The outline of the algorithm extracted from the video is presented as the following:
 
 - **Just get started don't procrastinate.**
 - **Create an outline** by making a list of all your figures and tables. Put them in order of presentation as they may appear in the results and discussion. Always work from an outline. If you have to stop you can easily pick up the writing later. You have the data so this part is easy.
