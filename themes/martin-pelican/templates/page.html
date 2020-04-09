@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block title %}{{ page.title }}{%endblock%}
+{% block header %}
+<hgroup>
+  <h1>{{ page.title }}</h1>
+  <h2 class="tagline">{{TAGLINE}}</h2>
+</hgroup>
+{% endblock %}
+{% block content %}
+<section>
+	<!-- <hgroup>
+		<h1>{{ page.title }}</h1>
+		<h2 class="tagline">{{TAGLINE}}</h2>
+	</hgroup> -->
+	<!-- <h1>{{ page.title }}</h1>
+	<h2 class="tagline">{{TAGLINE}}</h2> -->
+    {% import 'translations.html' as translations with context %}
+    {{ translations.translations_for(page) }}
+
+    {{ page.content }}
+
+	{% if page.modified %}
+		<p>
+		Last updated: {{ page.locale_modified }}
+		</p>
+		{% endif %}
+</section>
+{% endblock %}
