@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
-# from __future__ import unicode_literals
 
 AUTHOR = u'yuhao'
 SITENAME = u'Yu Hao'
@@ -97,10 +96,10 @@ DISPLAY_PAGES_ON_MENU = False
 MENUITEMS = [('<i class="fa fa-user" aria-hidden="true"></i>HOME', '/'),
              ('<i class="fa fa-graduation-cap" aria-hidden="true"></i>Research', '/pages/research.html'),
              ('<i class="fa fa-code-fork" aria-hidden="true"></i>Code', '/pages/code.html'),
-             ('<i class="fa fa-pencil" aria-hidden="true"></i>Posts', '/blog_index.html')]
+             ('<i class="fa fa-pencil" aria-hidden="true"></i>Posts', '/techblog')]
 
-WEIBO = True
-WEIBO_KEY = "appproximate000001"
+# WEIBO = True
+# WEIBO_KEY = "appproximate000001"
 
 # READERS = {"html": None}
 # NOT_RENDERING = ['404.html']
